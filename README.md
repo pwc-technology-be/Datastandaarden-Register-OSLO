@@ -9,3 +9,8 @@ Uitwerking van het OSLO Data Standaarden Register
 |Proces & methode|Webpage|Description added - adapting webpage|19/07
 
 
+
+|To Do|Standaard|Task|Completed|
+|---|---|---|---|
+|Detailinformatie|Proces & methode|Datum aanmelding-Erkenning werkgroep en stuurorgaan|N|
+|Aanvullende documentatie|Proces & methode|Niet-normatieve documentatie|N|
