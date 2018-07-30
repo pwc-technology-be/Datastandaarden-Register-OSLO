@@ -14,4 +14,4 @@ Uitwerking van het OSLO Data Standaarden Register
 |---|---|---|---|
 |Detailinformatie|Proces & methode|Datum aanmelding-Erkenning werkgroep en stuurorgaan|N|
 |Aanvullende documentatie|Proces & methode|Niet-normatieve documentatie|N|
-|Relative links|Algemeen|Aanpassen links naar relatieve links|N
+|Relative links|Algemeen|Aanpassen links naar relatieve links|Ok
