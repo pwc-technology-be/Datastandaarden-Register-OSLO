@@ -68,12 +68,13 @@
 	    		</div>
 	    		<!-- end intro -->
 	    		<!-- cijfers -->
+	    		<div align="right">
 		        <div class="grid u-spacer--large">
 		          <div class="col--3-12 col--6-12--s">
 		            <div class="infotext-links">
 		              <div class="infotext-wrapper">
 		                <a href="#erkende_standaarden" class="infotext infotext--badge">
-		                  <div class="infotext__value js-infotext__value">16</div>
+		                  <div class="infotext__value js-infotext__value" id="count_erkende"></div>
 		                  <div class="infotext__text">Erkende standaarden</div>
 		                </a>
 		              </div>
@@ -83,7 +84,7 @@
 		            <div class="infotext-links">
 		              <div class="infotext-wrapper">
 		                <a href="#kandidaat-standaarden" class="infotext infotext--badge">
-		                  <div class="infotext__value js-infotext__value">3</div>
+		                  <div class="infotext__value js-infotext__value" id="count_kandidaat"></div>
 		                  <div class="infotext__text">Kandidaat-standaarden</div>
 		                </a>
 		              </div>
@@ -93,23 +94,14 @@
 		            <div class="infotext-links">
 		              <div class="infotext-wrapper">
 		                <a href="#standaarden_in_ontwikkeling" class="infotext infotext--badge">
-		                  <div class="infotext__value js-infotext__value">15</div>
+		                  <div class="infotext__value js-infotext__value" id="count_ontwikkeling"></div>
 		                  <div class="infotext__text">Standaarden in ontwikkeling</div>
 		                </a>
 		              </div>
 		            </div>
 		          </div>
-		          <div class="col--3-12 col--6-12--s">
-		            <div class="infotext-links">
-		              <div class="infotext-wrapper">
-		                <a href="#" class="infotext infotext--badge">
-		                  <div class="infotext__value js-infotext__value">11</div>
-		                  <div class="infotext__text">Implementaties</div>
-		                </a>
-		              </div>
-		            </div>
-		          </div>
 		        </div>
+		    </div>
 		        <!-- end cijfers -->
 		        <!-- begeleidende tekst -->
 		        <div id="standaarden" class="u-spacer--large">
@@ -158,7 +150,7 @@
 				    <div class="col--1-1 u-spacer--large">
 				        <div data-table>
 				          <div class="u-table-overflow">
-				            <table class="data-table">
+				            <table class="data-table" id="tabel_erkende">
 				              <thead>
 				              <tr class="data-table__header">
 				                <th>
@@ -387,7 +379,7 @@
 				    <div class="col--1-1 u-spacer--large">
 				        <div data-table>
 				          <div class="u-table-overflow">
-				            <table class="data-table">
+				            <table class="data-table" id="tabel_kandidaat">
 				              <thead>
 				              <tr class="data-table__header">
 				                <th>
@@ -452,7 +444,7 @@
 					    <div class="col--1-1 u-spacer--large">
 					        <div data-table>
 					          <div class="u-table-overflow">
-					            <table class="data-table">
+					            <table class="data-table" id="tabel_ontwikkeling">
 					              <thead>
 					              <tr class="data-table__header">
 					                <th>
@@ -645,8 +637,18 @@
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
+</script>
+<script type="text/javascript">
+var countErkende = $("#tabel_erkende tbody tr").length;
+var countOntwikkeling = $('#tabel_ontwikkeling tbody tr').length;
+var countKantdidaat = $('#tabel_kandidaat tbody tr').length;
 
+document.getElementById("count_erkende").innerHTML = countErkende; 
+document.getElementById("count_ontwikkeling").innerHTML = countOntwikkeling;
+document.getElementById("count_kandidaat").innerHTML = countKantdidaat;
+
+</script>
   <script type="text/javascript">
 
   	// Definieer variabele rows -> verwijzing naar de rijen binnen de verschillende tabellen
